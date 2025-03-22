@@ -272,7 +272,7 @@ body {
     background-color: #D48C8C;
 }
 
-/* -------------adjusting for small screen------------- */
+/* -------------adjusting for tablet screen------------- */
 @media only screen and (max-width: 1060px){
     .header .fas {
         display: block;
@@ -360,6 +360,7 @@ body {
     }
 }
 
+/* -------------adjusting for phone screen------------- */
 @media only screen and (max-width: 540px) {
     .hero {
         background-image: url("img/background-phone.png");
