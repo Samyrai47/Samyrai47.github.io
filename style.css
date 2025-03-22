@@ -233,6 +233,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     font-size: 80px;
     margin-bottom: 4%;
 }
