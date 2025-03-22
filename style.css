@@ -1,0 +1,385 @@
+/* -------------general------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jersey 10', sans-serif;
+    font-weight: normal;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+div, header, footer {
+    border: 2px solid red;
+}
+body {
+    background-color: #F1E8E6;
+}
+
+/* -------------header------------- */
+.header {
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+    justify-self: center;
+    width: 80%;
+    background-color: #D48C8C;
+    border-radius: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 4% 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-title {
+    font-size: 40px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 35%;
+}
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.contact-link {
+    margin-right: 0;
+}
+.header a {
+    position: relative;
+}
+.header a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #EDD2CB;
+    left: 0;
+    bottom: -6px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.header a:hover::after {
+    width: 100%;
+
+}
+.header .fas {
+    display: none;
+}
+
+/* -------------hero------------- */
+.hero {
+    margin-top: -100px;
+    padding: 0 10%;
+    border: 2px solid goldenrod;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.spacer {
+    border: 2px solid forestgreen;
+    flex-basis: 70%;
+}
+.hero-content {
+    width: 25ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-align: right;
+    font-size: 90px;
+    animation: typing 10s steps(23) infinite alternate-reverse;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    0% {width: 0}
+    20% {width: 25ch}
+    75% {width: 25ch}
+    100% {width: 0}
+}
+
+/* -------------skills------------- */
+.skills {
+    border: aqua 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+.no-right-margin {
+    margin-right: 0;
+}
+.python-logo {
+    height: 125px;
+    width: 125px;
+}
+.java-logo {
+    height: 128px;
+    width: 128px;
+}
+.spring-logo {
+    width: 123px;
+    height: 121px;
+}
+.git-logo {
+    width: 170px;
+    height: 134px;
+}
+.html-logo {
+    width: 141px;
+    height: 141px;
+}
+.css-logo {
+    width: 141px;
+    height: 141px;
+}
+.figma-logo {
+    width: 123px;
+    height: 123px;
+}
+.skills-title {
+    flex-direction: row-reverse;
+    font-size: 64px;
+    align-self: flex-end;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.skills-subtitle {
+    margin-bottom: 3%;
+    font-size: 64px;
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo-card {
+    padding-top: 20px;
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F1E8E6;
+    font-size: 48px;
+    transition: 0.5s;
+}
+.logo-card:hover {
+    background-color: #EDD2CB;
+    border-radius: 40px;
+    color: black;
+}
+.end-of-skills {
+    margin-bottom: 8%;
+}
+
+/* -------------contact------------- */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+    border: aqua 2px solid;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7%;
+}
+.contact-left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    border: black 2px solid;
+    margin-bottom: 4%
+}
+.contact-form {
+    border: red 2px solid;
+    font-size: 64px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 48px;
+    border-radius: 20px;
+    resize: vertical;
+}
+.form-button {
+    background-color: #D48C8C;
+    border: none;
+    border-radius: 40px;
+    width: 263px;
+    height: 90px;
+    font-size: 48px;
+}
+.form-button:hover {
+    background-color: #EDD2CB;
+    cursor: pointer;
+}
+.contact-alternatives {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 80px;
+    margin-bottom: 4%;
+}
+.contact-alternatives a {
+    color: black;
+    text-decoration: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    align-items: center;
+}
+.github-logo {
+    width: 250px;
+    height: 250px;
+}
+.email-logo {
+    width: 180px;
+    height: 180px;
+}
+
+/* -------------footer------------- */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 30px;
+    background-color: #D48C8C;
+}
+
+/* -------------adjusting for small screen------------- */
+@media only screen and (max-width: 1060px){
+    .header .fas {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #D48C8C;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        padding: 80px 40px;
+        transition: right 0.4s;
+        z-index: 1;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+    .menu-link {
+        margin-bottom: 30px;
+        font-size: 55px;
+    }
+    .menu .fas {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+    }
+    .hero {
+        background-image: url("img/background-tablet.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .hero-content {
+        font-size: 50px;
+    }
+    .spacer {
+        flex-basis: 80%;
+    }
+    .skills-title {
+        font-size: 50px;
+    }
+    .skills-subtitle {
+        font-size: 40px;
+    }
+    .logo-card {
+        font-size: 30px;
+    }
+    .contact-left {
+        flex-basis: 100%;
+        font-size: 50px;
+    }
+    .contact-form {
+        font-size: 40px;
+    }
+    .form-button {
+        font-size: 40px;
+        width: 200px;
+        height: 50px;
+    }
+    .contact-form input, .contact-form textarea {
+        font-size: 29px;
+    }
+    .contact-alternatives {
+        flex-basis: 100%;
+        font-size: 40px;
+    }
+    .card {
+        font-size: 30px;
+    }
+    .github-logo {
+        width: 200px;
+        height: 200px;
+    }
+    .email-logo {
+        width: 130px;
+        height: 130px;
+    }
+    a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: #3c4146
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hero {
+        background-image: url("img/background-phone.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .header .fas {
+        font-size: 25px;
+    }
+    .menu{
+        width: 200px;
+    }
+    .menu-link {
+        font-size: 40px;
+    }
+    .hero-content {
+        font-size: 36px;
+    }
+    .footer {
+        height: 50px;
+        font-size: 20px;
+    }
+}

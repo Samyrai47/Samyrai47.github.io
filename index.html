@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samyrai47</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/076b8c26b5.js" crossorigin="anonymous"></script>
+</head>
+<body class="jersey-10-regular">
+<!-- -------------header------------- -->
+<header class="header">
+    <h1 class="header-title">Samyrai47</h1>
+    <div id="menu" class="menu">
+        <a class="menu-link home-link" href="#home">Home</a>
+        <a class="menu-link skills-link" href="#skills">Skills</a>
+        <a class="menu-link contact-link" href="#contact">Contact</a>
+        <i class="fas fa-times" onclick="closeMenu()"></i>
+    </div>
+    <i class="fas fa-bars" onclick="openMenu()"></i>
+</header>
+<!-- -------------hero section------------- -->
+<section id="home" class="hero">
+    <div class="spacer"></div>
+    <div class="hero-content">
+        <p>Welcome, Traveler!<br>Let me introduce myself.<br>I’m Ilya.</p>
+    </div>
+</section>
+<!-- -------------skills section------------- -->
+<section id="skills" class="skills">
+    <div class="skills-title">
+        <h2 class="skills-title-text">My Skills</h2>
+    </div>
+    <h3 class="skills-subtitle">Using</h3>
+    <div class="logos">
+        <div class="logo-card">
+            <img class="python-logo logo" src="img/python.png" alt="python">
+            <p class="skill-name">Python</p>
+        </div>
+        <div class="logo-card">
+            <img class="git-logo logo" src="img/git.png" alt="git">
+            <p class="skill-name">Git</p>
+        </div>
+        <div class="logo-card">
+            <img class="java-logo logo" src="img/java.png" alt="java">
+            <p class="skill-name">Java</p>
+        </div>
+        <div class="logo-card">
+            <img class="spring-logo logo no-right-margin" src="img/spring.png" alt="spring">
+            <p class="skill-name">Spring</p>
+        </div>
+    </div>
+    <h3 class="skills-subtitle">Mastering</h3>
+    <div class="logos end-of-skills">
+        <div class="logo-card">
+            <img class="html-logo logo" src="img/html5.png" alt="html5">
+            <p class="skill-name">HTML</p>
+        </div>
+        <div class="logo-card">
+            <img class="css-logo logo" src="img/css3.png" alt="css">
+            <p class="skill-name">CSS</p>
+        </div>
+        <div class="logo-card">
+            <img class="figma-logo logo no-right-margin" src="img/figma.png" alt="figma">
+            <p class="skill-name">Figma</p>
+        </div>
+    </div>
+</section>
+<!-- -------------contact section------------- -->
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-left">
+            <h3>Contact Me</h3>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input class="contact-form-input" id="name" type="text" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input class="contact-form-input" id="email" type="email" placeholder="Enter your email" required>
+                <label for="message">Message:</label><br>
+                <textarea class="contact-form-input" id="message" placeholder="Enter your message" required></textarea><br>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </div>
+        <div class="contact-alternatives">
+            <h3>or find me on the web!</h3>
+            <a href="https://github.com/Samyrai47" class="contact-alternatives-link" target="_blank">
+            <div class="card github-card">
+                <img class="github-logo" src="img/github.png" alt="github">
+                <p>Samyrai47</p>
+            </div>
+            </a>
+            <a href="mailto:sivolobov.ilya2@gmail.com" class="contact-alternatives-link" target="_blank">
+            <div class="card email-card">
+                <img class="email-logo" src="img/email.png" alt="letter">
+                <p>sivolobov.ilya2@gmail.com</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p>Made by ISS</p>
+</footer>
+</body>
+</html>
+
+<script>
+    var menu = document.getElementById("menu");
+
+    function openMenu() {
+        menu.style.right = "0";
+    }
+    function closeMenu() {
+        menu.style.right = "-400px";
+    }
+</script>
