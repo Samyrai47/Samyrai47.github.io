@@ -1,4 +1,4 @@
-var menu = document.getElementById("menu");
+let menu = document.getElementById("menu");
 
 function openMenu() {
     menu.style.right = "0";
